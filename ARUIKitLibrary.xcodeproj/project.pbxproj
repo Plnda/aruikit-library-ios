@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8E0C55920E65F77003F8E6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8E0C55820E65F77003F8E6B /* Assets.xcassets */; };
+		F8E0C56F20E65F7F003F8E6B /* ARWorldTrackingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C55B20E65F7F003F8E6B /* ARWorldTrackingConfiguration.swift */; };
+		F8E0C57020E65F7F003F8E6B /* SCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C55C20E65F7F003F8E6B /* SCNNode.swift */; };
+		F8E0C57120E65F7F003F8E6B /* ARHitTestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C55D20E65F7F003F8E6B /* ARHitTestResult.swift */; };
+		F8E0C57220E65F7F003F8E6B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C55E20E65F7F003F8E6B /* UIViewController.swift */; };
+		F8E0C57320E65F7F003F8E6B /* ARPlaneAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C55F20E65F7F003F8E6B /* ARPlaneAnchor.swift */; };
+		F8E0C57420E65F7F003F8E6B /* ARImageAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C56020E65F7F003F8E6B /* ARImageAnchor.swift */; };
+		F8E0C57520E65F7F003F8E6B /* ARWebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E0C56220E65F7F003F8E6B /* ARWebViewController.storyboard */; };
+		F8E0C57620E65F7F003F8E6B /* ARWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C56420E65F7F003F8E6B /* ARWebViewController.swift */; };
+		F8E0C57720E65F7F003F8E6B /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C56520E65F7F003F8E6B /* ARViewController.swift */; };
+		F8E0C57820E65F7F003F8E6B /* ARWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C56820E65F7F003F8E6B /* ARWebView.swift */; };
+		F8E0C57920E65F7F003F8E6B /* ARImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C56920E65F7F003F8E6B /* ARImage.swift */; };
+		F8E0C57A20E65F7F003F8E6B /* ARObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C56B20E65F7F003F8E6B /* ARObject.swift */; };
+		F8E0C57B20E65F7F003F8E6B /* ARController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C56C20E65F7F003F8E6B /* ARController.swift */; };
+		F8E0C57C20E65F7F003F8E6B /* ARVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C56D20E65F7F003F8E6B /* ARVideo.swift */; };
+		F8E0C57D20E65F7F003F8E6B /* ARUITracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C56E20E65F7F003F8E6B /* ARUITracking.swift */; };
+		F8E0C57F20E65F83003F8E6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C57E20E65F83003F8E6B /* AppDelegate.swift */; };
+		F8E0C58120E6612A003F8E6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E0C58020E6612A003F8E6B /* Main.storyboard */; };
+		F8E0C58320E6612E003F8E6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E0C58220E6612E003F8E6B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F8E0C54120E65F42003F8E6B /* ARUIKitLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARUIKitLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E0C55220E65F44003F8E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8E0C55820E65F77003F8E6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8E0C55B20E65F7F003F8E6B /* ARWorldTrackingConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARWorldTrackingConfiguration.swift; sourceTree = "<group>"; };
+		F8E0C55C20E65F7F003F8E6B /* SCNNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNNode.swift; sourceTree = "<group>"; };
+		F8E0C55D20E65F7F003F8E6B /* ARHitTestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARHitTestResult.swift; sourceTree = "<group>"; };
+		F8E0C55E20E65F7F003F8E6B /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		F8E0C55F20E65F7F003F8E6B /* ARPlaneAnchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARPlaneAnchor.swift; sourceTree = "<group>"; };
+		F8E0C56020E65F7F003F8E6B /* ARImageAnchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARImageAnchor.swift; sourceTree = "<group>"; };
+		F8E0C56220E65F7F003F8E6B /* ARWebViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ARWebViewController.storyboard; sourceTree = "<group>"; };
+		F8E0C56420E65F7F003F8E6B /* ARWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARWebViewController.swift; sourceTree = "<group>"; };
+		F8E0C56520E65F7F003F8E6B /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		F8E0C56820E65F7F003F8E6B /* ARWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARWebView.swift; sourceTree = "<group>"; };
+		F8E0C56920E65F7F003F8E6B /* ARImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARImage.swift; sourceTree = "<group>"; };
+		F8E0C56B20E65F7F003F8E6B /* ARObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARObject.swift; sourceTree = "<group>"; };
+		F8E0C56C20E65F7F003F8E6B /* ARController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARController.swift; sourceTree = "<group>"; };
+		F8E0C56D20E65F7F003F8E6B /* ARVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARVideo.swift; sourceTree = "<group>"; };
+		F8E0C56E20E65F7F003F8E6B /* ARUITracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARUITracking.swift; sourceTree = "<group>"; };
+		F8E0C57E20E65F83003F8E6B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8E0C58020E6612A003F8E6B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F8E0C58220E6612E003F8E6B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8E0C53E20E65F42003F8E6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8E0C53820E65F42003F8E6B = {
+			isa = PBXGroup;
+			children = (
+				F8E0C54320E65F42003F8E6B /* ARUIKitLibrary */,
+				F8E0C54220E65F42003F8E6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8E0C54220E65F42003F8E6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8E0C54120E65F42003F8E6B /* ARUIKitLibrary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8E0C54320E65F42003F8E6B /* ARUIKitLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				F8E0C56620E65F7F003F8E6B /* Classes */,
+				F8E0C55A20E65F7F003F8E6B /* Extensions */,
+				F8E0C56120E65F7F003F8E6B /* Storyboards */,
+				F8E0C56320E65F7F003F8E6B /* ViewControllers */,
+				F8E0C57E20E65F83003F8E6B /* AppDelegate.swift */,
+				F8E0C55820E65F77003F8E6B /* Assets.xcassets */,
+				F8E0C55220E65F44003F8E6B /* Info.plist */,
+			);
+			path = ARUIKitLibrary;
+			sourceTree = "<group>";
+		};
+		F8E0C55A20E65F7F003F8E6B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F8E0C55B20E65F7F003F8E6B /* ARWorldTrackingConfiguration.swift */,
+				F8E0C55C20E65F7F003F8E6B /* SCNNode.swift */,
+				F8E0C55D20E65F7F003F8E6B /* ARHitTestResult.swift */,
+				F8E0C55E20E65F7F003F8E6B /* UIViewController.swift */,
+				F8E0C55F20E65F7F003F8E6B /* ARPlaneAnchor.swift */,
+				F8E0C56020E65F7F003F8E6B /* ARImageAnchor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F8E0C56120E65F7F003F8E6B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F8E0C58220E6612E003F8E6B /* LaunchScreen.storyboard */,
+				F8E0C58020E6612A003F8E6B /* Main.storyboard */,
+				F8E0C56220E65F7F003F8E6B /* ARWebViewController.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F8E0C56320E65F7F003F8E6B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8E0C56420E65F7F003F8E6B /* ARWebViewController.swift */,
+				F8E0C56520E65F7F003F8E6B /* ARViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F8E0C56620E65F7F003F8E6B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F8E0C56720E65F7F003F8E6B /* ARObjects */,
+				F8E0C56E20E65F7F003F8E6B /* ARUITracking.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F8E0C56720E65F7F003F8E6B /* ARObjects */ = {
+			isa = PBXGroup;
+			children = (
+				F8E0C56820E65F7F003F8E6B /* ARWebView.swift */,
+				F8E0C56920E65F7F003F8E6B /* ARImage.swift */,
+				F8E0C56A20E65F7F003F8E6B /* Protocol */,
+				F8E0C56C20E65F7F003F8E6B /* ARController.swift */,
+				F8E0C56D20E65F7F003F8E6B /* ARVideo.swift */,
+			);
+			path = ARObjects;
+			sourceTree = "<group>";
+		};
+		F8E0C56A20E65F7F003F8E6B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F8E0C56B20E65F7F003F8E6B /* ARObject.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8E0C54020E65F42003F8E6B /* ARUIKitLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8E0C55520E65F44003F8E6B /* Build configuration list for PBXNativeTarget "ARUIKitLibrary" */;
+			buildPhases = (
+				F8E0C53D20E65F42003F8E6B /* Sources */,
+				F8E0C53E20E65F42003F8E6B /* Frameworks */,
+				F8E0C53F20E65F42003F8E6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARUIKitLibrary;
+			productName = ARUIKitLibrary;
+			productReference = F8E0C54120E65F42003F8E6B /* ARUIKitLibrary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8E0C53920E65F42003F8E6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Jason Meulenhoff";
+				TargetAttributes = {
+					F8E0C54020E65F42003F8E6B = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = F8E0C53C20E65F42003F8E6B /* Build configuration list for PBXProject "ARUIKitLibrary" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8E0C53820E65F42003F8E6B;
+			productRefGroup = F8E0C54220E65F42003F8E6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8E0C54020E65F42003F8E6B /* ARUIKitLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8E0C53F20E65F42003F8E6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E0C58120E6612A003F8E6B /* Main.storyboard in Resources */,
+				F8E0C58320E6612E003F8E6B /* LaunchScreen.storyboard in Resources */,
+				F8E0C55920E65F77003F8E6B /* Assets.xcassets in Resources */,
+				F8E0C57520E65F7F003F8E6B /* ARWebViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8E0C53D20E65F42003F8E6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E0C57C20E65F7F003F8E6B /* ARVideo.swift in Sources */,
+				F8E0C57A20E65F7F003F8E6B /* ARObject.swift in Sources */,
+				F8E0C57920E65F7F003F8E6B /* ARImage.swift in Sources */,
+				F8E0C57F20E65F83003F8E6B /* AppDelegate.swift in Sources */,
+				F8E0C57320E65F7F003F8E6B /* ARPlaneAnchor.swift in Sources */,
+				F8E0C57420E65F7F003F8E6B /* ARImageAnchor.swift in Sources */,
+				F8E0C57B20E65F7F003F8E6B /* ARController.swift in Sources */,
+				F8E0C57620E65F7F003F8E6B /* ARWebViewController.swift in Sources */,
+				F8E0C57820E65F7F003F8E6B /* ARWebView.swift in Sources */,
+				F8E0C57720E65F7F003F8E6B /* ARViewController.swift in Sources */,
+				F8E0C57120E65F7F003F8E6B /* ARHitTestResult.swift in Sources */,
+				F8E0C57020E65F7F003F8E6B /* SCNNode.swift in Sources */,
+				F8E0C57D20E65F7F003F8E6B /* ARUITracking.swift in Sources */,
+				F8E0C57220E65F7F003F8E6B /* UIViewController.swift in Sources */,
+				F8E0C56F20E65F7F003F8E6B /* ARWorldTrackingConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F8E0C55320E65F44003F8E6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8E0C55420E65F44003F8E6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8E0C55620E65F44003F8E6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H6W4A8YK8A;
+				INFOPLIST_FILE = ARUIKitLibrary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.pinch.ARUIKitLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8E0C55720E65F44003F8E6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H6W4A8YK8A;
+				INFOPLIST_FILE = ARUIKitLibrary/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.pinch.ARUIKitLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8E0C53C20E65F42003F8E6B /* Build configuration list for PBXProject "ARUIKitLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E0C55320E65F44003F8E6B /* Debug */,
+				F8E0C55420E65F44003F8E6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8E0C55520E65F44003F8E6B /* Build configuration list for PBXNativeTarget "ARUIKitLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E0C55620E65F44003F8E6B /* Debug */,
+				F8E0C55720E65F44003F8E6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8E0C53920E65F42003F8E6B /* Project object */;
+}
