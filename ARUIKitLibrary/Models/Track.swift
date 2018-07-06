@@ -8,15 +8,17 @@
 
 import Foundation
 
-struct Track: Decodable {
+struct Track: Decodable, Equatable {
 
 	let artist: String
 	let title: String
-	let albumArtURL: URL
+	let albumArtURL: URL?
+	let duration: Int
 
 	enum CodingKeys: String, CodingKey {
 		case artist
 		case title
 		case albumArtURL = "absoluteAlbumArtUri"
+		case duration
 	}
 }

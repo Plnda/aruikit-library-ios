@@ -8,8 +8,9 @@
 
 import Foundation
 
-struct Queue: Decodable {
+struct Queue: Decodable, Equatable {
 
 	let currentTrack: Track
 	let nextTrack: Track
+	let elapsedTime: Int
 }

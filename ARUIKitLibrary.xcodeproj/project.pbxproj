@@ -12,6 +12,7 @@
 		B941CB1E20EF7326000F48E2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B941CB1D20EF7326000F48E2 /* API.swift */; };
 		B941CB2120EF7413000F48E2 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = B941CB2020EF7413000F48E2 /* Track.swift */; };
 		B941CB2320EF743F000F48E2 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B941CB2220EF743F000F48E2 /* Queue.swift */; };
+		B941CB2520EFA750000F48E2 /* TimeParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B941CB2420EFA750000F48E2 /* TimeParts.swift */; };
 		F8E0C55920E65F77003F8E6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8E0C55820E65F77003F8E6B /* Assets.xcassets */; };
 		F8E0C56F20E65F7F003F8E6B /* ARWorldTrackingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C55B20E65F7F003F8E6B /* ARWorldTrackingConfiguration.swift */; };
 		F8E0C57020E65F7F003F8E6B /* SCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E0C55C20E65F7F003F8E6B /* SCNNode.swift */; };
@@ -40,6 +41,7 @@
 		B941CB1D20EF7326000F48E2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		B941CB2020EF7413000F48E2 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		B941CB2220EF743F000F48E2 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		B941CB2420EFA750000F48E2 /* TimeParts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeParts.swift; sourceTree = "<group>"; };
 		DA770302F83649083059167D /* Pods_ARUIKitLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARUIKitLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E0C54120E65F42003F8E6B /* ARUIKitLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARUIKitLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E0C55220E65F44003F8E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				B941CB2020EF7413000F48E2 /* Track.swift */,
 				B941CB2220EF743F000F48E2 /* Queue.swift */,
+				B941CB2420EFA750000F48E2 /* TimeParts.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				F8E0C57220E65F7F003F8E6B /* UIViewController.swift in Sources */,
 				B941CB1E20EF7326000F48E2 /* API.swift in Sources */,
 				F8E0C56F20E65F7F003F8E6B /* ARWorldTrackingConfiguration.swift in Sources */,
+				B941CB2520EFA750000F48E2 /* TimeParts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
