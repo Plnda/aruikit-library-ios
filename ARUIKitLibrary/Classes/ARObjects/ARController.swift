@@ -42,6 +42,7 @@ internal class ARController: ARImage {
 
 		let plane = SCNPlane(width: 0.6, height: 1.2)
 		plane.materials.first?.diffuse.contents = window
+		plane.materials.first?.transparency = 0.2
 
 		let node = SCNNode(geometry: plane)
 		node.name = name
