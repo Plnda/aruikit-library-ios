@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DDB5D3A5D56954484A05FC1 /* Pods_ARUIKitLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA770302F83649083059167D /* Pods_ARUIKitLibrary.framework */; };
 		B941CB1920EF62E0000F48E2 /* DJBotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B941CB1820EF62E0000F48E2 /* DJBotViewController.swift */; };
 		B941CB1B20EF6303000F48E2 /* DJBotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B941CB1A20EF6303000F48E2 /* DJBotViewController.xib */; };
 		F8E0C55920E65F77003F8E6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8E0C55820E65F77003F8E6B /* Assets.xcassets */; };
@@ -31,8 +32,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FF175E339097ABD111A5A86 /* Pods-ARUIKitLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARUIKitLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARUIKitLibrary/Pods-ARUIKitLibrary.debug.xcconfig"; sourceTree = "<group>"; };
+		484AA91DB9FB7526350DEC3E /* Pods-ARUIKitLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARUIKitLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARUIKitLibrary/Pods-ARUIKitLibrary.release.xcconfig"; sourceTree = "<group>"; };
 		B941CB1820EF62E0000F48E2 /* DJBotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJBotViewController.swift; sourceTree = "<group>"; };
 		B941CB1A20EF6303000F48E2 /* DJBotViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DJBotViewController.xib; sourceTree = "<group>"; };
+		DA770302F83649083059167D /* Pods_ARUIKitLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARUIKitLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E0C54120E65F42003F8E6B /* ARUIKitLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARUIKitLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E0C55220E65F44003F8E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8E0C55820E65F77003F8E6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,17 +65,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DDB5D3A5D56954484A05FC1 /* Pods_ARUIKitLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F544C023DAF7AE7BB0FE1E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA770302F83649083059167D /* Pods_ARUIKitLibrary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B3E838FDB3C82A9B62CAFAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FF175E339097ABD111A5A86 /* Pods-ARUIKitLibrary.debug.xcconfig */,
+				484AA91DB9FB7526350DEC3E /* Pods-ARUIKitLibrary.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F8E0C53820E65F42003F8E6B = {
 			isa = PBXGroup;
 			children = (
 				F8E0C54320E65F42003F8E6B /* ARUIKitLibrary */,
 				F8E0C54220E65F42003F8E6B /* Products */,
+				2B3E838FDB3C82A9B62CAFAE /* Pods */,
+				0F544C023DAF7AE7BB0FE1E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8E0C55520E65F44003F8E6B /* Build configuration list for PBXNativeTarget "ARUIKitLibrary" */;
 			buildPhases = (
+				349C4AAA94732B1F3A719A41 /* [CP] Check Pods Manifest.lock */,
 				F8E0C53D20E65F42003F8E6B /* Sources */,
 				F8E0C53E20E65F42003F8E6B /* Frameworks */,
 				F8E0C53F20E65F42003F8E6B /* Resources */,
@@ -227,6 +252,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		349C4AAA94732B1F3A719A41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARUIKitLibrary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F8E0C53D20E65F42003F8E6B /* Sources */ = {
@@ -371,15 +417,13 @@
 		};
 		F8E0C55620E65F44003F8E6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FF175E339097ABD111A5A86 /* Pods-ARUIKitLibrary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6W4A8YK8A;
 				INFOPLIST_FILE = ARUIKitLibrary/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.pinch.ARUIKitLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -389,15 +433,13 @@
 		};
 		F8E0C55720E65F44003F8E6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 484AA91DB9FB7526350DEC3E /* Pods-ARUIKitLibrary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6W4A8YK8A;
 				INFOPLIST_FILE = ARUIKitLibrary/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.pinch.ARUIKitLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
