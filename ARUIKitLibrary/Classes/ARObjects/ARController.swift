@@ -52,6 +52,7 @@ internal class ARController: ARImage {
 
 	/// A common method that will be called to initialize this class
 	private func commonInit(viewController: UIViewController) {
+		self.viewController = viewController
 		self.window = UIWindow(frame: CGRect(x: 0, y: 0, width: ARWebView.screenSize.width, height: ARWebView.screenSize.height))
 
 		// Bind the `ViewController` to the rootview
