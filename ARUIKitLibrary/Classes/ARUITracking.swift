@@ -75,7 +75,7 @@ internal class ARUITracking {
 		}
 
 		if type is ARController.Type {
-			return ARController(name: uniqueName, width: 0.0)
+			return ARController(name: uniqueName, width: 0.0, viewController: DJBotViewController())
 		}
 
 		return nil
