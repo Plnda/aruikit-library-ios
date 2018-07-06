@@ -15,7 +15,7 @@ extension ARWorldTrackingConfiguration {
 	static var `default`: ARWorldTrackingConfiguration {
 
 		let configuration = ARWorldTrackingConfiguration()
-		configuration.planeDetection = .vertical
+		configuration.planeDetection = .horizontal
 		configuration.isAutoFocusEnabled = true
 		configuration.isLightEstimationEnabled = true
 		configuration.environmentTexturing = .automatic

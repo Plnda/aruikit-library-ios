@@ -7,25 +7,35 @@
 //
 
 import Foundation
+import RxSwift
 
 final class API {
 
-	func getNowPlaying() {
+	func getPlayingQueue() -> Single<Queue> {
 
-		let url = URL(string: "http://192.168.2.106:5005/office/state/")!
+		let url = URL(string: "http://192.168.2.106:7777/v1/state/")!
 
-		let task = URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
+		return Single.create(subscribe: { (single) -> Disposable in
 
-			guard let data = data else { return }
-			do {
+			let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
 
-				let page = try JSONDecoder().decode(String.self, from: data)
+				guard let data = data else { return }
+				do {
 
-			} catch (let error) {
-				print(error.localizedDescription)
+					let queue = try JSONDecoder().decode(Queue.self, from: data)
+					single(.success(queue))
+
+				} catch (let error) {
+					single(.error(error))
+				}
 			}
-		}
 
-		task.resume()
+			task.resume()
+
+			return Disposables.create {
+				task.cancel()
+			}
+
+		})
 	}
 }

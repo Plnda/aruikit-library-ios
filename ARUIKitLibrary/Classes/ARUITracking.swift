@@ -75,7 +75,7 @@ internal class ARUITracking {
 		}
 
 		if type is ARController.Type {
-			return ARController(name: uniqueName, width: 0.0, viewController: DJBotViewController())
+			return ARController(name: uniqueName, width: 0.0, viewController: DJBotViewController.instance())
 		}
 
 		return nil
@@ -135,7 +135,7 @@ internal class ARUITracking {
 
 		// Check if we have a plane and create a plane
 		if let anchor = anchor as? ARPlaneAnchor {
-			node.addChildNode(anchor.createNode(color: .clear))
+			node.addChildNode(anchor.createNode(color: UIColor.black.withAlphaComponent(0.2)))
 			surfaceCount += 1
 			return
 		}

@@ -26,14 +26,14 @@ class ARViewController: UIViewController {
 		ARWebView.screenSize = view.bounds.size
 		ARController.screenSize = CGSize(width: view.bounds.height, height: view.bounds.width)
 		
-		let objects = [
-			ARController(name: "photo-jason", width: 0.6, viewController: DJBotViewController())
+		//let objects = [
+			//ARController(name: "photo-jason", width: 0.6, viewController: DJBotViewController())
 			//ARVideo(name: "photo-jason", width: 0.6)
 			//ARWebView(name: "photo-jason", width: 0.6, url: URL(string: "https://pinch.nl")!)
-		]
+		//]
 
 		// Create a new ARUITacking object that tracks the given objects
-		trackable = ARUITracking(with: objects, for: sceneView)
+		trackable = ARUITracking(with: [], for: sceneView)
 
 		// OnClick will spawn views of the selected type
 		trackable.spawnType = ARController.self
