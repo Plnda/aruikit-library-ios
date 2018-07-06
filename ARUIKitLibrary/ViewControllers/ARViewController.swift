@@ -24,7 +24,7 @@ class ARViewController: UIViewController {
 
 		// Set the correct size
 		ARWebView.screenSize = view.bounds.size
-		ARWebView.screenSize = view.bounds.size
+		ARController.screenSize = CGSize(width: view.bounds.height, height: view.bounds.width)
 		
 		let objects = [
 			ARController(name: "photo-jason", width: 0.6, viewController: DJBotViewController())

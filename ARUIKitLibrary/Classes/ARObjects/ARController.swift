@@ -40,9 +40,8 @@ internal class ARController: ARImage {
 	/// Method will process the `ARWebView`
 	override func process() -> SCNNode {
 
-		let plane = SCNPlane(width: 0.6, height: 1.2)
+		let plane = SCNPlane(width: 1.2, height: 0.6)
 		plane.materials.first?.diffuse.contents = window
-		plane.materials.first?.transparency = 0.2
 
 		let node = SCNNode(geometry: plane)
 		node.name = name
@@ -54,7 +53,7 @@ internal class ARController: ARImage {
 	/// A common method that will be called to initialize this class
 	private func commonInit(viewController: UIViewController) {
 		self.viewController = viewController
-		self.window = UIWindow(frame: CGRect(x: 0, y: 0, width: ARWebView.screenSize.width, height: ARWebView.screenSize.height))
+		self.window = UIWindow(frame: CGRect(x: 0, y: 0, width: ARController.screenSize.width, height: ARController.screenSize.height))
 
 		// Bind the `ViewController` to the rootview
 		window.rootViewController = self.viewController
