@@ -36,7 +36,7 @@ class ARViewController: UIViewController {
 		trackable = ARUITracking(with: objects, for: sceneView)
 
 		// OnClick will spawn views of the selected type
-		trackable.spawnType = ARWebView.self
+		//trackable.spawnType = ARWebView.self
 
 		let scene = SCNScene()
 
