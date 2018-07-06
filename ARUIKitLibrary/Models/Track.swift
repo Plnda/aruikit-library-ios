@@ -13,7 +13,7 @@ struct Track: Decodable, Equatable {
 	let artist: String
 	let title: String
 	let albumArtURL: URL?
-	let duration: Int
+	let duration: Int?
 
 	enum CodingKeys: String, CodingKey {
 		case artist

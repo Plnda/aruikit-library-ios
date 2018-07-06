@@ -21,11 +21,19 @@ final class DJBotViewController: UIViewController {
 	// Current cover
 	let localAlbumArtURL = BehaviorSubject<URL?>(value: nil)
 
+	// Next cover
+	let localNextTrackAlbumArtURL = BehaviorSubject<URL?>(value: nil)
+
 	// UI
 	@IBOutlet weak var maskCurrentTrackImageView: UIImageView!
 	@IBOutlet weak var currentTrackImageView: UIImageView!
 	@IBOutlet weak var titleLabel: UILabel!
 	@IBOutlet weak var subtitleLabel: UILabel!
+
+	@IBOutlet weak var nextTrack1ImageView: UIImageView!
+	@IBOutlet weak var nextTrack1titleLabel: UILabel!
+	@IBOutlet weak var nextTrack1subtitleLabel: UILabel!
+
 	@IBOutlet weak var progressSlider: UISlider!
 	@IBOutlet weak var elapsedTimeLabel: UILabel!
 	@IBOutlet weak var durationLabel: UILabel!
@@ -63,6 +71,7 @@ final class DJBotViewController: UIViewController {
 
 				self?.localQueue.onNext(queue)
 				self?.localAlbumArtURL.onNext(queue.currentTrack.albumArtURL)
+				self?.localNextTrackAlbumArtURL.onNext(queue.nextTrack.albumArtURL)
 
 			})
 
@@ -80,8 +89,12 @@ final class DJBotViewController: UIViewController {
 				self?.titleLabel.text = queue.currentTrack.title
 				self?.subtitleLabel.text = queue.currentTrack.artist
 				self?.elapsedTimeLabel.text = queue.elapsedTime.toTimeParts().description
-				self?.durationLabel.text = queue.currentTrack.duration.toTimeParts().description
-				self?.progressSlider.value = Float(queue.elapsedTime) / Float(queue.currentTrack.duration)
+				self?.durationLabel.text = queue.currentTrack.duration?.toTimeParts().description
+				self?.nextTrack1titleLabel.text = queue.nextTrack.title
+				self?.nextTrack1subtitleLabel.text = queue.nextTrack.artist
+
+				guard let duration = queue.currentTrack.duration else { return }
+				self?.progressSlider.value = Float(queue.elapsedTime) / Float(duration)
 
 			})
 			.disposed(by: disposeBag)
@@ -93,11 +106,27 @@ final class DJBotViewController: UIViewController {
 
 				guard let url = url else { return }
 
+				self?.currentTrackImageView.af_cancelImageRequest()
 				self?.currentTrackImageView.image = nil
 				self?.currentTrackImageView.af_setImage(withURL: url, imageTransition: .crossDissolve(0.2), runImageTransitionIfCached: true, completion: nil)
 
 			})
 			.disposed(by: disposeBag)
+
+		localNextTrackAlbumArtURL.asObserver()
+			.observeOn(MainScheduler.instance)
+			.distinctUntilChanged()
+			.subscribe(onNext: { [weak self] (url) in
+
+				guard let url = url else { return }
+
+				self?.nextTrack1ImageView.af_cancelImageRequest()
+				self?.nextTrack1ImageView.image = nil
+				self?.nextTrack1ImageView.af_setImage(withURL: url, imageTransition: .crossDissolve(0.2), runImageTransitionIfCached: true, completion: nil)
+
+			})
+			.disposed(by: disposeBag)
+
 
 		let _ = Observable<Int>
 			.interval(1, scheduler: MainScheduler.instance)
