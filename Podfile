@@ -7,5 +7,6 @@ target 'ARUIKitLibrary' do
 
   # Pods for ARUIKitLibrary
   pod 'AlamofireImage'
+  pod 'RxSwift'
 
 end
