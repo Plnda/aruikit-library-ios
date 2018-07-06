@@ -27,7 +27,8 @@ class ARViewController: UIViewController {
 		ARWebView.screenSize = view.bounds.size
 		
 		let objects = [
-			ARVideo(name: "photo-jason", width: 0.6)
+			ARController(name: "photo-jason", width: 0.6, viewController: DJBotViewController())
+			//ARVideo(name: "photo-jason", width: 0.6)
 			//ARWebView(name: "photo-jason", width: 0.6, url: URL(string: "https://pinch.nl")!)
 		]
 
